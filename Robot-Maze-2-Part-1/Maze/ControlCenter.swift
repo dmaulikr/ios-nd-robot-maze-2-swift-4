@@ -19,13 +19,13 @@ class ControlCenter {
         
         // Step 1.1d
         // TODO: Test the isFacingWall() function:
-        // if robotIsBlocked {
-        //     print("blocked")
-        //     myRobot.rotateLeft()
-        // } else {
-        //     print("not blocked")
-        //     myRobot.move()
-        // }
+        if robotIsBlocked {
+            print("blocked")
+            randomlyRotateRightOrLeft(myRobot)
+        } else {
+            print("not blocked")
+            continueStraightOrRotate(myRobot)
+        }
     
         // Step 1.4
         // TODO: Write an if statement that enables the robot to choose how to move. Use the pseudocode below as a guide.
