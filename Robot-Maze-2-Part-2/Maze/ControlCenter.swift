@@ -33,7 +33,7 @@ class ControlCenter {
         if isThreeWayJunction && robotIsBlocked {
             randomlyRotateRightOrLeft(myRobot)
         } else if isThreeWayJunction && !robotIsBlocked {
-             continueStraightOrRotate(myRobot)
+            continueStraightOrRotate(myRobot)
         } else if isTwoWayPath && robotIsBlocked {
             randomlyRotateRightOrLeft(myRobot)
         } else if isTwoWayPath && !robotIsBlocked {
