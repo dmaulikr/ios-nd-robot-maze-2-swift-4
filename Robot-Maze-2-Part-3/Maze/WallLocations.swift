@@ -15,10 +15,10 @@ extension ControlCenter {
         let cell = mazeController.currentCell(robot)
         var isWall: Bool = false
         
-        print("cell above robot?: \(cell.top)")
-        print("cell below robot?: \(cell.bottom)")
-        print("cell to left of robot?: \(cell.left)")
-        print("cell to right of robot?: \(cell.right)")
+//        print("cell above robot?: \(cell.top)")
+//        print("cell below robot?: \(cell.bottom)")
+//        print("cell to left of robot?: \(cell.left)")
+//        print("cell to right of robot?: \(cell.right)")
         
         switch(direction) {
         case .up:
