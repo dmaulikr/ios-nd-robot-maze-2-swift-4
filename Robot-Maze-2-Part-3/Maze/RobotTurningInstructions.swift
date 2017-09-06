@@ -12,7 +12,6 @@ extension ControlCenter {
     
     func randomlyRotateRightOrLeft(_ robot: ComplexRobotObject) {
         let randomNumber = arc4random() % 2
-        print("randomlyRotateRightOrLeft: \(randomNumber)")
         // You may want to paste your Part 1 implementation of randomlyRotateRightOrLeft(robot: ComplexRobotObject) here.
         if randomNumber == 0 {
             robot.rotateLeft()
@@ -33,9 +32,6 @@ extension ControlCenter {
     }
 
     func turnTowardClearPath(_ robot: ComplexRobotObject, wallInfo: (up: Bool, right: Bool, down: Bool, left: Bool, numberOfWalls: Int)) {
-        // Instead of passing wall info
-        //  USE this
-        //let myWallInfo = checkWalls(robot)
         
         if robot.direction == .left && wallInfo.down {
             robot.rotateRight()
